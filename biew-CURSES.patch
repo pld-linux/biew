@@ -1,0 +1,31 @@
+diff -ur biew-520/makefile.inc biew-520.curses/makefile.inc
+--- biew-520/makefile.inc	Sat Oct 21 11:17:06 2000
++++ biew-520.curses/makefile.inc	Sat Nov 18 22:08:02 2000
+@@ -62,7 +62,7 @@
+ endif
+ ifeq ($(TARGET_OS),linux)
+  HOST=linux
+- CDEFOS=-D__LINUX__ -D__UNIX__ -D__OS_NAME__='"Linux"' -D_VT100_ -D__OS__="linux" -Ulinux
++ CDEFOS=-D__LINUX__ -D__UNIX__ -D__OS_NAME__='"Linux"' -D__OS__="linux" -Ulinux
+  OSLDEF=
+  OS_LIBS=
+  ifeq ($(USE_MOUSE),n)
+@@ -70,6 +70,18 @@
+   CDEFOS += -DHAVE_MOUSE
+   OS_LIBS += -lgpm
+  endif
++ ifeq ($(TARGET_SCREEN_LIB),vt100)
++   CDEFOS += -D_VT100_
++ else
++   ifeq ($(TARGET_SCREEN_LIB),slang)
++     CDEFOS += -D_SLANG_
++     OS_LIBS += -lslang
++   else
++	 CDEFOS += -D_CURSES_
++	 OS_LIBS += -lncurses
++   endif
++ endif
++
+ endif
+ ifeq ($(TARGET_OS),unix)
+  HOST=unix
