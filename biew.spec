@@ -5,11 +5,13 @@ Version:	520
 Release:	1
 License:	GPL
 Group:		Applications/Editors
+Group(de):	Applikationen/Editors
 Group(pl):	Aplikacje/Edytory
+Group(pt):	Aplicações/Editores
 Source0:	ftp://biew.sourceforge.net/pub/biew/%{name}-%{version}.tar.bz2
-Patch0:		biew-CURSES.patch
+Patch0:		%{name}-CURSES.patch
 URL:		http://biew.sourceforge.net/
-BuildRequires: ncurses-devel
+BuildRequires:	ncurses-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,9 +44,10 @@ a.out, coff32 PharLap, rdoff)
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}/ $RPM_BUILD_ROOT%{_libdir}/biew/
+
 install biew $RPM_BUILD_ROOT%{_bindir}
-install bin_rc/biew.hlp $RPM_BUILD_ROOT%{_libdir}/biew/
-install bin_rc/standard.skn $RPM_BUILD_ROOT%{_libdir}/biew/
+install bin_rc/{biew.hlp,standard.skn} $RPM_BUILD_ROOT%{_libdir}/biew/
+
 gzip -9nf doc/*txt doc/*.en doc/*.ru
 
 %clean 
@@ -52,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files 
 %defattr(644,root,root,755)
+%doc doc/*.gz
 %attr(755,root,root) %{_bindir}/biew
 %dir %{_libdir}/biew
 %{_libdir}/biew/*
-%doc doc/biew_en.txt* doc/release.txt* doc/unix.txt*
