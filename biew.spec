@@ -12,17 +12,18 @@ BuildRequires:	ncurses-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-BIEW is advenced Binary vIEWer with built-in editor for binary,
-hexadecimal and disassembler modes. His disassembler support many
-procesors(Pentium4, K7 Athlon, Cyrix-M2) and many file formats (MZ,
-NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF, a.out, coff32 PharLap, rdoff)
+BIEW is advanced Binary vIEWer with built-in editor for binary,
+hexadecimal and disassembler modes. His disassembler supports many
+processors (Pentium4, K7 Athlon, Cyrix-M2) and many file formats
+(MZ, NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF, a.out, coff32 PharLap,
+rdoff).
 
 %description -l pl
 BIEW (Binary vIEWer) jest zaawansowan± przegl±dark± i edytorem plików
-binarnych. Zawiera wbudowany disasembler z suportem dla wielu nowych
+binarnych. Zawiera wbudowany disasembler ze wsparciem dla wielu nowych
 procesorów (w tym Pentium4, Athlon i Cyrix-M2) oraz wielu formatów
 plików wykonywalnych (MZ, NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF,
-a.out, coff32 PharLap, rdoff)
+a.out, coff32 PharLap, rdoff).
 
 %prep
 %setup -q
