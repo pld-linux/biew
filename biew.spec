@@ -1,5 +1,7 @@
 Summary:	BIEW is Binary vIEWer and editor
 Summary(pl):	BIEW jest przegl╠dark╠ plikСw binarnych z edytorem
+Summary(ru):	biew - редактор двоичных файлов с дизассемблером
+Summary(uk):	biew - редактор дв╕йкових файл╕в з дизасемблером
 Name:		biew
 Version:	532
 Release:	1
@@ -24,6 +26,20 @@ binarnych. Zawiera wbudowany disasembler ze wsparciem dla wielu nowych
 procesorСw (w tym Pentium4, Athlon i Cyrix-M2) oraz wielu formatСw
 plikСw wykonywalnych (MZ, NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF,
 a.out, coff32 PharLap, rdoff).
+
+%description -l ru
+biew - это просмотрщик/редактор двоичных файлов с возможностью просмотра
+и редактирования в двоичном, шестнадцатиричном и дизассемберном режимах.
+Поддерживается выделение ассемблерных команд PentiumIV/K7-Athlon/Cyrix-M2,
+есть конвертор кириллических кодировок, полный просмотр форматов MZ, NE, PE,
+LE, LX, DOS.SYS, NLM, ELF.
+
+%description -l uk
+biew - це переглядач/редактор дв╕йкових файл╕в з можлив╕стю перегляду та
+редагування в дв╕йковому, ш╕стнадцятковому та дизасемблерному режимах.
+П╕дтриму╓ться вид╕лення асемберних команд PentiumIV/K7-Athlon/Cyrix-M2,
+╓ конвертор кирил╕чних кодувань, повний перегляд формат╕в MZ, NE, PE, LE,
+LX, DOS.SYS, NLM, ELF.
 
 %prep
 %setup -q
