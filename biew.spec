@@ -11,7 +11,7 @@ Group:		Applications/Editors
 Source0:	http://dl.sourceforge.net/biew/%{name}-%{version}.tar.bz2
 URL:		http://biew.sourceforge.net/
 BuildRequires:	ncurses-devel
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 BIEW is advanced Binary vIEWer with built-in editor for binary,
