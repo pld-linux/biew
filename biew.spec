@@ -1,4 +1,4 @@
-Summary:	BIEW is Binary vIEWer and editor 
+Summary:	BIEW is Binary vIEWer and editor
 Summary(pl):	BIEW jest przegl±dark± plików binarnych z edytorem
 Name:		biew
 Version:	53p5
@@ -14,8 +14,8 @@ Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 BIEW is advenced Binary vIEWer with built-in editor for binary,
 hexadecimal and disassembler modes. His disassembler support many
-procesors(Pentium4, K7 Athlon, Cyrix-M2) and many file formats (MZ, NE,
-PE, LE, LX, DOS.SYS, NLM, arch, ELF, a.out, coff32 PharLap, rdoff)
+procesors(Pentium4, K7 Athlon, Cyrix-M2) and many file formats (MZ,
+NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF, a.out, coff32 PharLap, rdoff)
 
 %description -l pl
 BIEW (Binary vIEWer) jest zaawansowan± przegl±dark± i edytorem plików
@@ -50,10 +50,10 @@ install bin_rc/{biew.hlp,standard.skn} $RPM_BUILD_ROOT%{_libdir}/biew/
 
 gzip -9nf doc/*txt doc/*.en doc/*.ru
 
-%clean 
+%clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %doc doc/*.gz
 %attr(755,root,root) %{_bindir}/biew
