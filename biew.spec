@@ -2,7 +2,7 @@ Summary:	BIEW is Binary vIEWer and editor
 Summary(pl):	BIEW jest przegl±dark± plików binarnych z edytorem
 Name:		biew
 Version:	53p5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors
 Source0:	ftp://biew.sourceforge.net/pub/biew/5.x/src/%{name}%{version}.tar.bz2
@@ -48,13 +48,12 @@ install -d $RPM_BUILD_ROOT%{_bindir}/ $RPM_BUILD_ROOT%{_libdir}/biew/
 install biew $RPM_BUILD_ROOT%{_bindir}
 install bin_rc/{biew.hlp,standard.skn} $RPM_BUILD_ROOT%{_libdir}/biew/
 
-gzip -9nf doc/*txt doc/*.en doc/*.ru
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*.gz
+%doc doc/*txt doc/*.en
+%lang(ru) %doc doc/*.ru
 %attr(755,root,root) %{_bindir}/biew
 %{_libdir}/biew
