@@ -3,13 +3,12 @@ Summary(pl):	BIEW jest przegl╠dark╠ plikСw binarnych z edytorem
 Summary(ru):	biew - редактор двоичных файлов с дизассемблером
 Summary(uk):	biew - редактор дв╕йкових файл╕в з дизасемблером
 Name:		biew
-Version:	532
+Version:	550
 Release:	1
 License:	GPL
 Group:		Applications/Editors
+# Source0-md5:	e24de24e56900b00420ee882305c9167
 Source0:	http://dl.sourceforge.net/biew/%{name}-%{version}.tar.bz2
-# Source0-md5:	9619003b7da7306ed876624456a6cae1
-#Patch0:		%{name}-CURSES.patch
 URL:		http://biew.sourceforge.net/
 BuildRequires:	ncurses-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,7 +43,6 @@ LX, DOS.SYS, NLM, ELF.
 
 %prep
 %setup -q
-#%patch0 -p1
 
 %build
 %ifarch %{ix86}
