@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Editors
 Source0:	http://dl.sourceforge.net/biew/%{name}-%{version}.tar.bz2
+# Source0-md5:	9619003b7da7306ed876624456a6cae1
 #Patch0:		%{name}-CURSES.patch
 URL:		http://biew.sourceforge.net/
 BuildRequires:	ncurses-devel
