@@ -61,10 +61,11 @@ LX, DOS.SYS, NLM, ELF.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/biew}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/biew,%{_mandir}/man1}
 
 install biew $RPM_BUILD_ROOT%{_bindir}
 install bin_rc/{biew.hlp,skn/*} $RPM_BUILD_ROOT%{_libdir}/biew
+install doc/biew.1	$RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -75,3 +76,4 @@ rm -rf $RPM_BUILD_ROOT
 %lang(ru) %doc doc/*.ru
 %attr(755,root,root) %{_bindir}/biew
 %{_libdir}/biew
+%{_mandir}/man1/biew*
