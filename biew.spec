@@ -3,12 +3,12 @@ Summary(pl):	BIEW jest przegl╠dark╠ plikСw binarnych z edytorem
 Summary(ru):	biew - редактор двоичных файлов с дизассемблером
 Summary(uk):	biew - редактор дв╕йкових файл╕в з дизасемблером
 Name:		biew
-Version:	550
+Version:	561
 Release:	1
 License:	GPL
 Group:		Applications/Editors
-# Source0-md5:	e24de24e56900b00420ee882305c9167
-Source0:	http://dl.sourceforge.net/biew/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/biew/%{name}%{version}.tar.bz2
+# Source0-md5:	ea62710ca6aa14fadfc6bd99fcb0a695
 URL:		http://biew.sourceforge.net/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -52,6 +52,7 @@ LX, DOS.SYS, NLM, ELF.
 %endif
 
 %{__make} \
+	HOST_CFLAGS="%{rpmcflags}" \
 	TARGET_PLATFORM=$target \
 	TARGET_OS=unix \
 	INCS="-I. -I/usr/include/ncurses" \
@@ -59,10 +60,10 @@ LX, DOS.SYS, NLM, ELF.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}/ $RPM_BUILD_ROOT%{_libdir}/biew/
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/biew}
 
 install biew $RPM_BUILD_ROOT%{_bindir}
-install bin_rc/{biew.hlp,skn/*} $RPM_BUILD_ROOT%{_libdir}/biew/
+install bin_rc/{biew.hlp,skn/*} $RPM_BUILD_ROOT%{_libdir}/biew
 
 %clean
 rm -rf $RPM_BUILD_ROOT
