@@ -9,7 +9,6 @@ License:	GPL
 Group:		Applications/Editors
 Source0:	http://dl.sourceforge.net/biew/%{name}%{version}.tar.bz2
 # Source0-md5:	622fb1f02a6d921b273f0a39407f8e7d
-# Source0-size:	594367
 URL:		http://biew.sourceforge.net/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
