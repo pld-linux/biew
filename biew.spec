@@ -5,9 +5,6 @@ Version:	53p5
 Release:	1
 License:	GPL
 Group:		Applications/Editors
-Group(de):	Applikationen/Editors
-Group(pl):	Aplikacje/Edytory
-Group(pt):	Aplicações/Editores
 Source0:	ftp://biew.sourceforge.net/pub/biew/5.x/src/%{name}%{version}.tar.bz2
 Patch0:		%{name}-CURSES.patch
 URL:		http://biew.sourceforge.net/
