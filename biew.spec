@@ -1,12 +1,12 @@
 Summary:	BIEW is Binary vIEWer and editor
 Summary(pl):	BIEW jest przegl±dark± plików binarnych z edytorem
 Name:		biew
-Version:	53p5
-Release:	2
+Version:	532
+Release:	1
 License:	GPL
 Group:		Applications/Editors
-Source0:	ftp://biew.sourceforge.net/pub/biew/5.x/src/%{name}%{version}.tar.bz2
-Patch0:		%{name}-CURSES.patch
+Source0:	http://prdownloads.sourceforge.net/biew/%{name}-%{version}.tar.bz2
+#Patch0:		%{name}-CURSES.patch
 URL:		http://biew.sourceforge.net/
 BuildRequires:	ncurses-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,8 +25,8 @@ plików wykonywalnych (MZ, NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF,
 a.out, coff32 PharLap, rdoff)
 
 %prep
-%setup -q -n %{name}%{version}
-%patch0 -p1
+%setup -q
+#%patch0 -p1
 
 %build
 %ifarch %{ix86}
@@ -37,7 +37,7 @@ a.out, coff32 PharLap, rdoff)
 
 %{__make} \
 	TARGET_PLATFORM=$target \
-	TARGET_OS=%{_target_os} \
+	TARGET_OS=unix \
 	INCS="-I. -I/usr/include/ncurses" \
 	compilation=%{?debug:debug}%{!?debug:advance}
 
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}/ $RPM_BUILD_ROOT%{_libdir}/biew/
 
 install biew $RPM_BUILD_ROOT%{_bindir}
-install bin_rc/{biew.hlp,standard.skn} $RPM_BUILD_ROOT%{_libdir}/biew/
+install bin_rc/{biew.hlp,skn/*} $RPM_BUILD_ROOT%{_libdir}/biew/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
