@@ -5,7 +5,7 @@ Version:	532
 Release:	1
 License:	GPL
 Group:		Applications/Editors
-Source0:	http://prdownloads.sourceforge.net/biew/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/biew/%{name}-%{version}.tar.bz2
 #Patch0:		%{name}-CURSES.patch
 URL:		http://biew.sourceforge.net/
 BuildRequires:	ncurses-devel
