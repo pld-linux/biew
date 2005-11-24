@@ -52,6 +52,7 @@ LX, DOS.SYS, NLM, ELF.
 %endif
 
 %{__make} \
+	CC="%{__cc}" \
 	HOST_CFLAGS="%{rpmcflags}" \
 	TARGET_PLATFORM=$target \
 	TARGET_OS=unix \
