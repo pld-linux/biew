@@ -1,9 +1,9 @@
 # NOTE:
 # - slang (recommented screen lib) doesn't have mouse support
 Summary:	BIEW is Binary vIEWer and editor
-Summary(pl):	BIEW jest przegl╠dark╠ plikСw binarnych z edytorem
-Summary(ru):	biew - редактор двоичных файлов с дизассемблером
-Summary(uk):	biew - редактор дв╕йкових файл╕в з дизасемблером
+Summary(pl.UTF-8):   BIEW jest przeglд┘darkд┘ plikцЁw binarnych z edytorem
+Summary(ru.UTF-8):   biew - я─п╣п╢п╟п╨я┌п╬я─ п╢п╡п╬п╦я┤п╫я▀я┘ я└п╟п╧п╩п╬п╡ я│ п╢п╦п╥п╟я│я│п╣п╪п╠п╩п╣я─п╬п╪
+Summary(uk.UTF-8):   biew - я─п╣п╢п╟п╨я┌п╬я─ п╢п╡я√п╧п╨п╬п╡п╦я┘ я└п╟п╧п╩я√п╡ п╥ п╢п╦п╥п╟я│п╣п╪п╠п╩п╣я─п╬п╪
 Name:		biew
 Version:	562
 Release:	2
@@ -23,26 +23,26 @@ processors (Pentium4, K7 Athlon, Cyrix-M2) and many file formats (MZ,
 NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF, a.out, coff32 PharLap,
 rdoff).
 
-%description -l pl
-BIEW (Binary vIEWer) jest zaawansowan╠ przegl╠dark╠ i edytorem plikСw
+%description -l pl.UTF-8
+BIEW (Binary vIEWer) jest zaawansowanд┘ przeglд┘darkд┘ i edytorem plikцЁw
 binarnych. Zawiera wbudowany disasembler ze wsparciem dla wielu nowych
-procesorСw (w tym Pentium4, Athlon i Cyrix-M2) oraz wielu formatСw
-plikСw wykonywalnych (MZ, NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF,
+procesorцЁw (w tym Pentium4, Athlon i Cyrix-M2) oraz wielu formatцЁw
+plikцЁw wykonywalnych (MZ, NE, PE, LE, LX, DOS.SYS, NLM, arch, ELF,
 a.out, coff32 PharLap, rdoff).
 
-%description -l ru
-biew - это просмотрщик/редактор двоичных файлов с возможностью
-просмотра и редактирования в двоичном, шестнадцатиричном и
-дизассемберном режимах. Поддерживается выделение ассемблерных команд
-PentiumIV/K7-Athlon/Cyrix-M2, есть конвертор кириллических кодировок,
-полный просмотр форматов MZ, NE, PE, LE, LX, DOS.SYS, NLM, ELF.
+%description -l ru.UTF-8
+biew - я█я┌п╬ п©я─п╬я│п╪п╬я┌я─я┴п╦п╨/я─п╣п╢п╟п╨я┌п╬я─ п╢п╡п╬п╦я┤п╫я▀я┘ я└п╟п╧п╩п╬п╡ я│ п╡п╬п╥п╪п╬п╤п╫п╬я│я┌я▄я▌
+п©я─п╬я│п╪п╬я┌я─п╟ п╦ я─п╣п╢п╟п╨я┌п╦я─п╬п╡п╟п╫п╦я▐ п╡ п╢п╡п╬п╦я┤п╫п╬п╪, я┬п╣я│я┌п╫п╟п╢я├п╟я┌п╦я─п╦я┤п╫п╬п╪ п╦
+п╢п╦п╥п╟я│я│п╣п╪п╠п╣я─п╫п╬п╪ я─п╣п╤п╦п╪п╟я┘. п÷п╬п╢п╢п╣я─п╤п╦п╡п╟п╣я┌я│я▐ п╡я▀п╢п╣п╩п╣п╫п╦п╣ п╟я│я│п╣п╪п╠п╩п╣я─п╫я▀я┘ п╨п╬п╪п╟п╫п╢
+PentiumIV/K7-Athlon/Cyrix-M2, п╣я│я┌я▄ п╨п╬п╫п╡п╣я─я┌п╬я─ п╨п╦я─п╦п╩п╩п╦я┤п╣я│п╨п╦я┘ п╨п╬п╢п╦я─п╬п╡п╬п╨,
+п©п╬п╩п╫я▀п╧ п©я─п╬я│п╪п╬я┌я─ я└п╬я─п╪п╟я┌п╬п╡ MZ, NE, PE, LE, LX, DOS.SYS, NLM, ELF.
 
-%description -l uk
-biew - це переглядач/редактор дв╕йкових файл╕в з можлив╕стю перегляду
-та редагування в дв╕йковому, ш╕стнадцятковому та дизасемблерному
-режимах. П╕дтриму╓ться вид╕лення асемберних команд
-PentiumIV/K7-Athlon/Cyrix-M2, ╓ конвертор кирил╕чних кодувань, повний
-перегляд формат╕в MZ, NE, PE, LE, LX, DOS.SYS, NLM, ELF.
+%description -l uk.UTF-8
+biew - я├п╣ п©п╣я─п╣пЁп╩я▐п╢п╟я┤/я─п╣п╢п╟п╨я┌п╬я─ п╢п╡я√п╧п╨п╬п╡п╦я┘ я└п╟п╧п╩я√п╡ п╥ п╪п╬п╤п╩п╦п╡я√я│я┌я▌ п©п╣я─п╣пЁп╩я▐п╢я┐
+я┌п╟ я─п╣п╢п╟пЁя┐п╡п╟п╫п╫я▐ п╡ п╢п╡я√п╧п╨п╬п╡п╬п╪я┐, я┬я√я│я┌п╫п╟п╢я├я▐я┌п╨п╬п╡п╬п╪я┐ я┌п╟ п╢п╦п╥п╟я│п╣п╪п╠п╩п╣я─п╫п╬п╪я┐
+я─п╣п╤п╦п╪п╟я┘. п÷я√п╢я┌я─п╦п╪я┐я■я┌я▄я│я▐ п╡п╦п╢я√п╩п╣п╫п╫я▐ п╟я│п╣п╪п╠п╣я─п╫п╦я┘ п╨п╬п╪п╟п╫п╢
+PentiumIV/K7-Athlon/Cyrix-M2, я■ п╨п╬п╫п╡п╣я─я┌п╬я─ п╨п╦я─п╦п╩я√я┤п╫п╦я┘ п╨п╬п╢я┐п╡п╟п╫я▄, п©п╬п╡п╫п╦п╧
+п©п╣я─п╣пЁп╩я▐п╢ я└п╬я─п╪п╟я┌я√п╡ MZ, NE, PE, LE, LX, DOS.SYS, NLM, ELF.
 
 %prep
 %setup -q
