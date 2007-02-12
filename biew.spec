@@ -1,9 +1,9 @@
 # NOTE:
 # - slang (recommented screen lib) doesn't have mouse support
 Summary:	BIEW is Binary vIEWer and editor
-Summary(pl.UTF-8):   BIEW jest przeglądarką plików binarnych z edytorem
-Summary(ru.UTF-8):   biew - редактор двоичных файлов с дизассемблером
-Summary(uk.UTF-8):   biew - редактор двійкових файлів з дизасемблером
+Summary(pl.UTF-8):	BIEW jest przeglądarką plików binarnych z edytorem
+Summary(ru.UTF-8):	biew - редактор двоичных файлов с дизассемблером
+Summary(uk.UTF-8):	biew - редактор двійкових файлів з дизасемблером
 Name:		biew
 Version:	562
 Release:	2
