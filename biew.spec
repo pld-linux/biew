@@ -5,12 +5,12 @@ Summary(pl.UTF-8):	BIEW jest przeglądarką plików binarnych z edytorem
 Summary(ru.UTF-8):	biew - редактор двоичных файлов с дизассемблером
 Summary(uk.UTF-8):	biew - редактор двійкових файлів з дизасемблером
 Name:		biew
-Version:	600
+Version:	602
 Release:	1
 License:	GPL
 Group:		Applications/Editors
 Source0:	http://dl.sourceforge.net/biew/%{name}-%{version}-src.tar.bz2
-# Source0-md5:	1bb12fe473befb92f4d616b0a92731f6
+# Source0-md5:	3226a466ae5989d7e12a947bc8e76ed4
 URL:		http://biew.sourceforge.net/
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel
@@ -52,7 +52,7 @@ PentiumIV/K7-Athlon/Cyrix-M2, є конвертор кирилічних код�
 %{__make} \
 	PREFIX=%{_prefix} \
 	CC="%{__cc}" \
-	HOST_CFLAGS="%{rpmcflags}" \
+	HOST_CFLAGS="%{rpmcflags} -mmmx -msse" \
 %ifarch %{ix86}
 	TARGET_PLATFORM=%{_target_cpu} \
 %else
