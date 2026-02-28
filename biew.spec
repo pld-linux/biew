@@ -6,7 +6,7 @@ Summary(ru.UTF-8):	biew - редактор двоичных файлов с ди
 Summary(uk.UTF-8):	biew - редактор двійкових файлів з дизасемблером
 Name:		biew
 Version:	610
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors
 Source0:	http://downloads.sourceforge.net/biew/%{name}-%{version}-src.tar.bz2
